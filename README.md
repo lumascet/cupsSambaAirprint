@@ -1,6 +1,8 @@
-# chuckcharlie/cups-avahi-airprint
+# cupsSambaAirprint
 
-Fork from [quadportnick/docker-cups-airprint](https://github.com/quadportnick/docker-cups-airprint)
+Combines Airprint and windows ipp automatic printer advertisement into one container. 
+
+Fork from [quadportnick/docker-cups-airprint](https://github.com/chuckcharlie/cups-avahi-airprint)
 
 ### Now supports ARM64 and AMD64!
 Use the *latest* or *version#* tags to auto choose the right architecture.
