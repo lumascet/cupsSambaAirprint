@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+  cups:
+    #image: chuckcharlie/cups-avahi-airprint
+    build: .
+    restart: always
+    network_mode: "host"
+    environment:
+      CUPSADMIN: cups
+      CUPSPASSWORD: cups
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    volumes:
+      - "services:/services"
+      - "config:/config"
+
+volumes:
+  services:
+  config:
